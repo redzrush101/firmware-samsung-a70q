@@ -8,6 +8,7 @@ Included firmware:
 
 - ADSP metadata, split ELF segments, and JSON service metadata
 - Adreno 612 board-specific ZAP shader firmware
+- MPSS modem firmware and service metadata
 - WCN3988 Bluetooth rampatch and board NVM
 - WCN3990 Wi-Fi board calibration data
 - Venus video firmware
@@ -18,5 +19,6 @@ upstream `linux-firmware` packages.
 
 The files were extracted from the public Samsung Galaxy A70 firmware set used
 by LineageOS. They are proprietary binary firmware; redistribution terms may
-vary. The Wi-Fi calibration is board-specific, not handset-specific. No modem
-EFS, IMEI, MAC address, or other per-device data is included.
+vary. The Wi-Fi calibration is board-specific, not handset-specific. The MPSS
+files are executable firmware from the read-only modem partition; modem EFS,
+IMEI, MAC addresses, and other per-device data are not included.
